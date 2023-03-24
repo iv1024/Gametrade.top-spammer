@@ -5,9 +5,7 @@ message2 = input("message2: ")
 count = int(input("送信したい回数: "))
 
 def launcher():
-
     session = requests.Session()
-
     response = session.get("https://gametrade.top")
 
     data = {"email": message1, "password": message2, "id": "00000000"}
